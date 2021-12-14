@@ -89,3 +89,21 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
+
+div.dog-detail {
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+p {
+    text-align: center4;
+}
