@@ -28,7 +28,7 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    background-color: rgb(191, 167, 223);
 }
 
 main {
@@ -37,7 +37,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
-}
+    
 
 section {
     background-color: var(--color5);
@@ -51,6 +51,8 @@ section {
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
     border: solid 2px var(--color1);
+    background-color: rgb(191, 167, 223);
+}
 }
 
 header {
@@ -96,6 +98,7 @@ div.dog-detail {
     justify-content: center;
     align-items: center;
     margin: 5px;
+    border: solid 1px black;
 }
 
 img {
@@ -105,5 +108,33 @@ img {
 }
 
 p {
-    text-align: center4;
+    text-align: center;
+}
+
+div.song-detail {
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border: solid 1px rgb(219, 99, 99);
+}
+
+div.family-detail {
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border: solid 1px rgb(56, 36, 238);
+    
+}
+
+div.candy-detail {
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border: solid 1px rgb(146, 28, 161);
 }

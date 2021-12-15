@@ -8,7 +8,42 @@ export async function getDogs() {
     const response = await client
 
         .from('dogs')
-        .select();
+        .select()
+        .order('id', true);
+
+    console.log(response.data);
+    return response.data;
+}
+
+export async function getSongs() {
+    const response = await client
+
+        .from('songs')
+        .select()
+        .order('id', true);
+        
+    console.log(response.data);
+    return response.data;
+}
+
+export async function getFamily() {
+    const response = await client
+
+        .from('familyMembers')
+        .select()
+        .order('id', true);
+
+    console.log(response.data);
+    return response.data;
+}
+
+export async function getCandy() {
+    const response = await client
+
+        .from('candies')
+        .select()
+        .order('id', true);
+
     console.log(response.data);
     return response.data;
 }
