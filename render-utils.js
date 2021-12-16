@@ -17,7 +17,7 @@ export function renderDogs(dog) {
     breedEl.textContent = dog.breed;
     
     ageAndBreedEl.append(ageEl, breedEl);
-    img.src = `../assets/${dog.breed}.jpg`;
+    img.src = `./assets/${dog.breed}.jpg`;
     
     div.append(nameEl, img, ageAndBreedEl);
 
@@ -41,7 +41,7 @@ export function renderSongs(song) {
     songEl.textContent = song.songName;
     yearEl.textContent = song.yearReleased;
     
-    img.src = `../assets/${song.artist}.jpg`;
+    img.src = `./assets/${song.artist}.jpg`;
     
     div.append(nameEl, img, songEl, yearEl);
 
