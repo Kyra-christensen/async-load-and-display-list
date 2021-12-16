@@ -15,9 +15,10 @@ export function renderDogs(dog) {
     nameEl.textContent = dog.name;
     ageEl.textContent = dog.age;
     breedEl.textContent = dog.breed;
+    img.src = `./assets/${dog.breed}.jpg`;
     
     ageAndBreedEl.append(ageEl, breedEl);
-    img.src = `./assets/${dog.breed}.jpg`;
+    
     
     div.append(nameEl, img, ageAndBreedEl);
 
