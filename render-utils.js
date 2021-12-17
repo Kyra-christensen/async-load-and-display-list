@@ -11,11 +11,11 @@ export function renderDogs(dog) {
     ageEl.classList.add('age');
     breedEl.classList.add('breed');
     ageAndBreedEl.classList.add('age-and-breed');
-    img.src = `./assets/${dog.breed}.jpg`;
+    
     nameEl.textContent = dog.name;
     ageEl.textContent = dog.age;
     breedEl.textContent = dog.breed;
-    
+    img.src = `./assets/${dog.breed}.jpg`;
     
     ageAndBreedEl.append(ageEl, breedEl);
     
